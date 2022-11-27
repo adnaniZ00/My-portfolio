@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
+
+body {
+    transition: 0.3s;
+    margin: 0px;
+    padding: 0px;
+    /* background-color: rgb(231, 231, 231); */
+    background-color: rgb(244, 241, 241);
+    font-family: 'Poppins', sans-serif;
+    color: rgb(60, 60, 58);
+    /* color:rgb(57, 57, 57); */
+    /* background-image: url(images/sky.avif);
+    background-size: cover; */
+}
+
+
+h1 {
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 300px;
+    margin: 10px 0px;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.square h2 {
+    margin: 50px 0px 10px 0px;
+}
+
+p {
+    margin: 0px;
+    font-size: 20px;
+}
+
+a {
+    color: rgb(166, 0, 166);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.dark a {
+    color: rgb(124, 83, 195);
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px;
+
+}
+
+
+.switch {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(39, 38, 38);
+    background-image: url(images/goku.webp);
+    background-size: cover;
+    position: relative;
+}
+
+.flicker {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: 0.3s;
+    box-shadow: inset 4px 4px 4px rgb(255, 255, 255),
+        inset -4px -4px 4px rgb(195 193 198 / 90%);
+}
+
+.dark {
+    background-color: rgb(57, 57, 57);
+    transition: 0.3s;
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+.dark .flicker {
+    transform: translateX(40px);
+}
+
+.dark>* {
+    color: rgb(255, 255, 255);
+}
+
+.main {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.main-text {
+    padding: 30px;
+    margin-bottom: 100px;
+
+}
+
+.square {
+    width: 98%;
+    margin: 1%;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.dark .square {
+    background-color: rgb(71, 71, 71);
+}
+
+#A {
+    background-image: url(images/kaneki.gif);
+    background-size: cover;
+}
+
+#B {
+    background-image: url(images/The\ rock.gif);
+    background-size: cover;
+}
+
+#C {
+    background-image: url(images/godfather.gif);
+    background-size: cover;
+}
+
+#D {
+    background-image: url(images/ghost.gif);
+    background-size: cover;
+}
+
+.sub-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    position: relative;
+    width: 50%;
+    height: 400px;
+    background-image: url(https://source.unsplash.com/720x600/?coding,programming);
+    background-size: cover;
+    margin-right: 30px;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 100px 30px;
+    background-color: rgb(136, 136, 136);
+    margin: 0%;
+    /* background-image: url(images/bridge.avif);
+    background-size: cover; */
+}
+
+.dark footer {
+    background-color: rgb(28, 28, 28);
+}
+
+@media only screen and (min-width: 970px) {
+    .main-text {
+        width: 50%;
+    }
+
+    }
+    .square {
+        width: 48%;
+        margin: 1%;
+        height: 600px;
+    }
+}
